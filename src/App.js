@@ -69,13 +69,13 @@ function Card(props) {
 
   return (
     <div className="col-md-4">
-      <a href={coffeeLink}>
+      <a className='link' href={coffeeLink}>
         <div className="card-image-container">
           <img src={coffeeImages[props.imageKey]} width="70%" alt={props.coffee.alt} />
         </div>
+        <h4>{props.coffee.title}</h4>
+        <p className='price'>{props.coffee.price}원</p>
       </a>
-      <h4>{props.coffee.title}</h4>
-      <p className='price'>{props.coffee.price}원</p>
     </div>
   );
 }

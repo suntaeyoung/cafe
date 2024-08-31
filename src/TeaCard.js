@@ -5,13 +5,13 @@ function TeaCard(props) {
 
   return (
     <div className="col-md-4">
-      <a href={teaLink}>
+      <a className="link" href={teaLink}>
         <div className="card-image-container">
           <img src={teaImages[props.imageKey]} width="70%" alt={props.tea.alt} />
         </div>
+        <h4>{props.tea.title}</h4>
+        <p className='price'>{props.tea.price}원</p>
       </a>
-      <h4>{props.tea.title}</h4>
-      <p className='price'>{props.tea.price}원</p>
     </div>
   );
 }
