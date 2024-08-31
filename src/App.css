@@ -1,5 +1,46 @@
+.main-bg {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
 .App {
   text-align: center;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.price, .content {
+  font-size: 18px;
+}
+
+.addBtn, .prevBtn, .nextBtn {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-image-container {
+  overflow: hidden; /* 이미지가 컨테이너를 벗어나지 않게 함 */
+  position: relative; /* 자식 요소의 위치를 상대적으로 설정 */
+}
+
+.card-image-container img {
+  transition: transform 0.5s ease; /* 이미지 크기 변경 애니메이션 */
+}
+
+.card-image-container:hover img {
+  transform: scale(1.1); /* 이미지가 1.1배 커지게 설정 */
 }
 
 .App-logo {
